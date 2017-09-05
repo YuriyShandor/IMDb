@@ -224,11 +224,7 @@ body {
 
 a {
   text-decoration: none;
-}
-
-a:hover {
-  color: #21afe0;
-  text-decoration: none;
+  cursor: pointer;
 }
 
 .span_blue {
@@ -365,4 +361,107 @@ header {
 
 .header-block .header__IMDb-info:hover .header__IMDb-info_link {
   color: #21afe0;
+}
+
+.section__top-nav {
+  width: 100%;
+  height: 58px;
+  background: #fafafa;
+}
+
+.top-nav {
+  width: inherit;
+  height: 58px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-nav .top-nav__main ul {
+  padding: 0;
+  display: flex;
+}
+
+.top-nav .top-nav__main ul li {
+  font-size: 16px;
+  color: #797979;
+  list-style: none;
+  margin-left: 20px;
+  padding-right: 20px;
+  border-right: 1px solid #797979;
+}
+
+.top-nav .top-nav__main ul li a {
+  font-size: 16px;
+  color: #797979;
+}
+
+.top-nav .top-nav__main ul li a:hover {
+  color: #21afe0;
+}
+
+.top-nav .top-nav__main ul li:first-child {
+  margin-left: 0;
+}
+
+.top-nav .top-nav__main ul li:last-child {
+  padding-right: 0;
+  border-right: none;
+}
+
+.top-nav .top-nav__account {
+  display: flex;
+  font-size: 16px;
+}
+
+.top-nav .top-nav__account span {
+  color: #797979;
+  cursor: pointer;
+}
+
+.top-nav .top-nav__account span:hover {
+  color: #21afe0;
+}
+
+.top-nav .top-nav__account .fa {
+  margin-left: 10px;
+}
+
+.top-nav .top-nav__account ul {
+  padding: 0;
+  list-style: none;
+  line-height: 1.5;
+}
+
+.top-nav .top-nav__account ul li a {
+  color: #797979;
+}
+
+.top-nav .top-nav__account ul li a:hover {
+  color: #21afe0;
+}
+
+.top-nav .top-nav__account .watchlist {
+  margin-right: 23px;
+}
+
+.top-nav .top-nav__account .dropdown {
+  position: relative;
+}
+
+.top-nav .top-nav__account .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fafafa;
+  min-width: 130px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 10px 10px;
+  z-index: 1;
+  right: -10px;
+  top: 3px;
+  text-align: right;
+}
+
+.top-nav .top-nav__account .dropdown:hover .dropdown-content {
+  display: block;
 }
