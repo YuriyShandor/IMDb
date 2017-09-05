@@ -465,3 +465,82 @@ header {
 .top-nav .top-nav__account .dropdown:hover .dropdown-content {
   display: block;
 }
+
+.top-slider__slide-content {
+  display: flex;
+  overflow: hidden;
+}
+
+.top-slider__slide-content .top__movie-poster a {
+  width: 270px;
+  height: 400px;
+  outline: none;
+}
+
+.top-slider__slide-content .top__movie-poster a img {
+  width: inherit;
+  height: inherit;
+}
+
+.top-slider__slide-content .top__movie-description {
+  width: calc(100% - 270px);
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-left: 25px;
+  color: #fff;
+}
+
+.top-slider__slide-content .top__movie-description .top__movie-title {
+  display: flex;
+  align-items: flex-end;
+}
+
+.top-slider__slide-content .top__movie-description .top__movie-title h1 {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.top-slider__slide-content .top__movie-description .top__movie-title h1 span {
+  font-size: 18px;
+}
+
+.top-slider__slide-content .top__movie-description .top__movie-story {
+  width: 600px;
+}
+
+.top-slider__slide-content .top__movie-description .top__movie-story p {
+  font-size: 16px;
+}
+
+.top-slider__slide-content .top__movie-description .top__movie-short-info {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 25px;
+}
+
+.top-slider__slide-content .top__movie-description .top__movie-short-info .movie-genre {
+  padding: 2px 5px;
+  border: 1px solid #fff;
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+.top-slider__slide-content .top__movie-description .movie-duration {
+  margin-left: 13px;
+  font-size: 14px;
+  color: #d2d2d2;
+  margin-right: 25px;
+}
+
+.top-slider__slide-content .top__movie-description .movie-release {
+  font-size: 14px;
+  color: #d2d2d2;
+}
+
+.top-slider__slide-content .top__movie-description_bg_01 {
+  background: url(../img/Insurgent_2015_bg.jpg) no-repeat top/cover;
+}
