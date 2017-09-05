@@ -272,14 +272,8 @@ header {
   }
 }
 
-.top-slider {
-
-
-}
-
 .top-slider__slide-content {
   display: flex;
-  overflow: hidden;
 
   .top__movie-poster {
     a {
@@ -355,5 +349,62 @@ header {
 
   .top__movie-description_bg_01 {
     background: url(../img/Insurgent_2015_bg.jpg) no-repeat top / cover;
+  }
+
+  .top__movie-description_bg_02 {
+    background: url(../img/Kingsman_The_Secret_Service_2014_bg.jpg) no-repeat top / cover;
+  }
+
+  .top__movie-description_bg_03 {
+    background: url(../img/Avengers_Age_of_Ultron_2015_bg.jpg) no-repeat top / cover;
+  }
+
+  .top__movie-description_bg_04 {
+    background: url(../img/Furious_Seven_2015_bg.jpg) no-repeat top / cover;
+  }
+
+  .top__movie-description_bg_05 {
+    background: url(../img/Mad_Max_Fury_Road_2015_bg.jpg) no-repeat top / cover;
+  }
+
+  .top__movie-description_bg_06 {
+    background: url(../img/Jurassic_World_2015_bg.jpg) no-repeat top / cover;
+  }
+
+  .top__movie-description_bg_07 {
+    background: url(../img/Chappie_2015_bg.jpg) no-repeat top / cover;
+  }
+}
+
+.section_top-slider {
+  position: relative;
+
+  .top-slider__nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    border: 2px solid #fff;
+    font-size: 25px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all, 0.5s;
+
+    &:hover {
+      border: 2px solid $blue;
+      color: $blue;
+    }
+  }
+
+  .top-slider__nav_previous {
+    left: 5%;
+  }
+
+  .top-slider__nav_next {
+    right: 5%;
   }
 }
