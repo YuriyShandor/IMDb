@@ -528,16 +528,34 @@ header {
   margin-right: 10px;
 }
 
-.top-slider__slide-content .top__movie-description .movie-duration {
+.top-slider__slide-content .top__movie-description .top__movie-short-info .movie-duration {
   margin-left: 13px;
   font-size: 14px;
   color: #d2d2d2;
   margin-right: 25px;
 }
 
-.top-slider__slide-content .top__movie-description .movie-release {
+.top-slider__slide-content .top__movie-description .top__movie-short-info .movie-release {
   font-size: 14px;
   color: #d2d2d2;
+}
+
+.top-slider__slide-content .top__movie-description .top__movie-short-info .movie-watch-trailer {
+  font-size: 14px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 38px;
+  outline: none;
+}
+
+.top-slider__slide-content .top__movie-description .top__movie-short-info .movie-watch-trailer i {
+  margin-right: 10px;
+}
+
+.top-slider__slide-content .top__movie-description .top__movie-short-info .movie-watch-trailer:hover {
+  color: #21afe0;
 }
 
 .top-slider__slide-content .top__movie-description_bg_01 {
@@ -599,4 +617,71 @@ header {
 
 .section_top-slider .top-slider__nav_next {
   right: 5%;
+}
+
+.cinema-movie {
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+}
+
+.cinema-movie .cinema-movie__nav {
+  padding: 0;
+  width: inherit;
+  display: flex;
+  border-bottom: 2px solid #e5e5e5;
+}
+
+.cinema-movie .cinema-movie__links {
+  width: inherit;
+  margin-top: 20px;
+}
+
+.cinema-movie__nav_item {
+  list-style: none;
+  font-size: 16px;
+  font-weight: 700;
+  color: #1f1f1f;
+  text-transform: uppercase;
+  padding: 25px 0;
+  margin: 0 30px;
+  border-bottom: 2px solid #e5e5e5;
+  transform: translateY(2px);
+  cursor: pointer;
+}
+
+.cinema-movie__nav_item:first-child {
+  margin-left: 0;
+}
+
+.cinema-movie__nav_item:hover {
+  color: #21afe0;
+}
+
+.cinema-movie__nav_item_on-click {
+  color: #21afe0;
+  border-bottom: 2px solid #21afe0;
+}
+
+.cinema-movie__links_movies {
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+}
+
+.cinema-movie__links_movies .cinema-movie__links_movie-list {
+  width: inherit;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cinema-movie__links_movies .cinema-movie__links_movie-list a {
+  outline: none;
+  width: 170px;
+  height: 230px;
+}
+
+.cinema-movie__links_movies .cinema-movie__links_movie-list a img {
+  width: inherit;
+  height: inherit;
 }

@@ -332,18 +332,36 @@ header {
         font-size: 12px;
         margin-right: 10px;
       }
-    }
 
-    .movie-duration {
-      margin-left: 13px;
-      font-size: 14px;
-      color: #d2d2d2;
-      margin-right: 25px;
-    }
+      .movie-duration {
+        margin-left: 13px;
+        font-size: 14px;
+        color: #d2d2d2;
+        margin-right: 25px;
+      }
 
-    .movie-release {
-      font-size: 14px;
-      color: #d2d2d2;
+      .movie-release {
+        font-size: 14px;
+        color: #d2d2d2;
+      }
+
+      .movie-watch-trailer {
+        font-size: 14px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        margin-right: 38px;
+        outline: none;
+
+        i {
+          margin-right: 10px;
+        }
+
+        &:hover {
+          color: $blue;
+        }
+      }
     }
   }
 
@@ -406,5 +424,72 @@ header {
 
   .top-slider__nav_next {
     right: 5%;
+  }
+}
+
+.cinema-movie {
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+
+  .cinema-movie__nav {
+    padding: 0;
+    width: inherit;
+    display: flex;
+    border-bottom: 2px solid #e5e5e5;
+  }
+
+  .cinema-movie__links {
+    width: inherit;
+    margin-top: 20px;
+  }
+}
+
+.cinema-movie__nav_item {
+  list-style: none;
+  font-size: 16px;
+  font-weight: 700;
+  color: #1f1f1f;
+  text-transform: uppercase;
+  padding: 25px 0;
+  margin: 0 30px;
+  border-bottom: 2px solid #e5e5e5;
+  transform: translateY(2px);
+  cursor: pointer;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:hover {
+    color: $blue;
+  }
+}
+
+.cinema-movie__nav_item_on-click {
+  color: $blue;
+  border-bottom: 2px solid $blue;
+}
+
+.cinema-movie__links_movies {
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+
+  .cinema-movie__links_movie-list {
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
+
+    a {
+      outline: none;
+      width: 170px;
+      height: 230px;
+
+      img {
+        width: inherit;
+        height: inherit;
+      }
+    }
   }
 }
