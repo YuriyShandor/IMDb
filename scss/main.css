@@ -343,6 +343,7 @@ header {
   display: flex;
   align-items: center;
   margin-left: 30px;
+  font-size: 14px;
 }
 
 .header-block .header__IMDb-info .fa {
@@ -350,16 +351,7 @@ header {
   margin-right: 10px;
 }
 
-.header-block .header__IMDb-info .header__IMDb-info_link {
-  color: #fff;
-  font-size: 14px;
-}
-
 .header-block .header__IMDb-info:hover {
-  color: #21afe0;
-}
-
-.header-block .header__IMDb-info:hover .header__IMDb-info_link {
   color: #21afe0;
 }
 
@@ -665,7 +657,7 @@ header {
 
 .cinema-movie__links_movies {
   width: inherit;
-  display: flex;
+  display: none;
   flex-direction: column;
 }
 
@@ -675,13 +667,48 @@ header {
   justify-content: space-between;
 }
 
-.cinema-movie__links_movies .cinema-movie__links_movie-list a {
+.cinema-movie__links_movies .cinema-movie__links_movie-list .cinema-movie__links_movie-list-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.cinema-movie__links_movies .cinema-movie__links_movie-list .cinema-movie__links_movie-list-item a {
   outline: none;
   width: 170px;
   height: 230px;
+  overflow: hidden;
 }
 
-.cinema-movie__links_movies .cinema-movie__links_movie-list a img {
+.cinema-movie__links_movies .cinema-movie__links_movie-list .cinema-movie__links_movie-list-item a img {
   width: inherit;
   height: inherit;
+  transition: all 0.3s linear;
+}
+
+.cinema-movie__links_movies .cinema-movie__links_movie-list .cinema-movie__links_movie-list-item a img:hover {
+  transform: scale(1.1);
+}
+
+.cinema-movie__links_movies .cinema-movie__links_movie-list .cinema-movie__links_movie-list-item h1 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #21afe0;
+  width: 160px;
+  margin: 0;
+  margin-top: 20px;
+}
+
+.cinema-movie__links_movies .cinema-movie__links_movies-more {
+  margin-top: 35px;
+  margin-bottom: 40px;
+  color: #21afe0;
+  width: 270px;
+}
+
+.cinema-movie__links_movies .cinema-movie__links_movies-more:hover {
+  text-decoration: underline;
+}
+
+.cinema-movie__links_movies_on-click {
+  display: flex;
 }

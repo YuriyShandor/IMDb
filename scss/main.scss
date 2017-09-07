@@ -144,23 +144,15 @@ header {
     display: flex;
     align-items: center;
     margin-left: 30px;
+    font-size: 14px;
 
     .fa {
       font-size: 23px;
       margin-right: 10px;
     }
 
-    .header__IMDb-info_link {
-      color: #fff;
-      font-size: 14px;
-    }
-
     &:hover {
       color: $blue;
-
-      .header__IMDb-info_link {
-        color: $blue;
-      }
     }
   }
 }
@@ -473,7 +465,7 @@ header {
 
 .cinema-movie__links_movies {
   width: inherit;
-  display: flex;
+  display: none;
   flex-direction: column;
 
   .cinema-movie__links_movie-list {
@@ -481,15 +473,50 @@ header {
     display: flex;
     justify-content: space-between;
 
-    a {
-      outline: none;
-      width: 170px;
-      height: 230px;
+    .cinema-movie__links_movie-list-item {
+      display: flex;
+      flex-direction: column;
 
-      img {
-        width: inherit;
-        height: inherit;
+      a {
+        outline: none;
+        width: 170px;
+        height: 230px;
+        overflow: hidden;
+
+        img {
+          width: inherit;
+          height: inherit;
+          transition: all 0.3s linear;
+
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+      }
+
+      h1 {
+        font-size: 16px;
+        font-weight: 400;
+        color: $blue;
+        width: 160px;
+        margin: 0;
+        margin-top: 20px;
       }
     }
   }
+
+  .cinema-movie__links_movies-more {
+    margin-top: 35px;
+    margin-bottom: 40px;
+    color: $blue;
+    width: 270px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.cinema-movie__links_movies_on-click {
+  display: flex;
 }
