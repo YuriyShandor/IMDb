@@ -520,3 +520,92 @@ header {
 .cinema-movie__links_movies_on-click {
   display: flex;
 }
+
+.news-tv-sidebar {
+  width: inherit;
+  display: flex;
+  justify-content: space-between;
+
+  .news-tv {
+    width: 770px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.news-slider {
+  width: inherit;
+
+  .news-slider__slide {
+    width: inherit;
+    display: flex;
+
+    .news-slider__slide_image {
+      width: 370px;
+      height: 370px;
+    }
+
+    .news-slider__slide_info {
+      width: 400px;
+      display: flex;
+      flex-direction: column;
+      padding: 0 20px;
+
+      .news-slider__slide_news {
+        margin: 0;
+        font-size: 18px;
+        font-weight: 700;
+        color: #000;
+        text-transform: uppercase;
+        padding-bottom: 20px;
+        border-bottom: 2px solid #000;
+        margin-top: 22px;
+        width: 55px;
+      }
+
+      .news-slider__slide_title {
+        margin: 0;
+        margin-top: 40px;
+        font-size: 18px;
+        color: $blue;
+        margin-bottom: 20px;
+      }
+
+      .news-slider__slide_magazine {
+        font-size: 13px;
+
+        span {
+          color: #a4a4a4;
+        }
+
+        a {
+          color: $blue;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      .news-slider__slide_discr {
+        margin: 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 16px;
+      }
+
+      .news-slider__slide_more {
+        font-size: 14px;
+        color: $blue;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .news-slider__slide_image_01 {
+      background: url(../img/Chappie_2015_news-bg.jpg) no-repeat top / cover;
+    }
+  }
+}
