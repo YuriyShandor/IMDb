@@ -1,7 +1,7 @@
 $(document).ready(function() {
   $('select').niceSelect();
 
-  $('.top-slider').slick({
+  $('.imdb-top-slider').slick({
     initialSlide: 3,
     centerMode: true,
     variableWidth: true,
@@ -22,5 +22,12 @@ $(document).ready(function() {
     $(`.cinema-movie__links_movies:nth-child(${indexOf})`).addClass('cinema-movie__links_movies_on-click');
   })
 
-  
+  $('.imdb-slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true,
+    dotsClass: 'slick-dots_imdb',
+    autoplay: true,
+    autoplaySpeed: 5000,
+  });
 });

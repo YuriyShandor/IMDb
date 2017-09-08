@@ -521,10 +521,15 @@ header {
   display: flex;
 }
 
+.section__news-tv-sidebar {
+  background: #f5f5f5;
+}
+
 .news-tv-sidebar {
   width: inherit;
   display: flex;
   justify-content: space-between;
+  padding-top: 25px;
 
   .news-tv {
     width: 770px;
@@ -533,12 +538,58 @@ header {
   }
 }
 
+.block-title {
+  display: flex;
+  flex-direction: column;
+
+  h1{
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  .block-title__line {
+    width: 48px;
+    height: 3px;
+    background: #fff;
+    margin-top: 20px;
+  }
+}
+
+.block-title_black {
+  h1{
+    color: #000;
+  }
+
+  .block-title__line {
+    background: #000;;
+  }
+}
+
 .news-slider {
   width: inherit;
+  outline: none;
+  position: relative;
+  background: #fff;
+
+  .slick-dots_imdb {
+    bottom: 0;
+    right: 285px;
+
+    li {
+      button {
+        background: darken(#e6e6e6, 15%);
+      }
+    }
+  }
 
   .news-slider__slide {
     width: inherit;
     display: flex;
+    transform: translateX(1px);
+    outline: none;
 
     .news-slider__slide_image {
       width: 370px;
@@ -551,21 +602,9 @@ header {
       flex-direction: column;
       padding: 0 20px;
 
-      .news-slider__slide_news {
-        margin: 0;
-        font-size: 18px;
-        font-weight: 700;
-        color: #000;
-        text-transform: uppercase;
-        padding-bottom: 20px;
-        border-bottom: 2px solid #000;
-        margin-top: 22px;
-        width: 55px;
-      }
-
       .news-slider__slide_title {
         margin: 0;
-        margin-top: 40px;
+        margin-top: 95px;
         font-size: 18px;
         color: $blue;
         margin-bottom: 20px;
@@ -607,5 +646,63 @@ header {
     .news-slider__slide_image_01 {
       background: url(../img/Chappie_2015_news-bg.jpg) no-repeat top / cover;
     }
+
+    .news-slider__slide_image_02 {
+      background: url(../img/Kingsman_The_Secret_Service_2014_news-bg.jpg) no-repeat top / cover;
+    }
+
+    .news-slider__slide_image_03 {
+      background: url(../img/Avengers_Age_of_Ultron_2015_news-bg.jpg) no-repeat top / cover;
+    }
+
+    .news-slider__slide_image_04 {
+      background: url(../img/Jurassic_World_2015_news-bg.jpg) no-repeat top / cover;
+    }
+
+    .news-slider__slide_image_05 {
+      background: url(../img/Mad_Max_Fury_Road_2015_news-bg.jpg) no-repeat top / cover;
+    }
   }
+}
+
+.slick-dots_imdb {
+  width: 90px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+
+  li {
+    list-style: none;
+
+    button {
+      font-size: 0;
+      width: 1px;
+      height: 12px;
+      border: none;
+      background: #fff;
+      border-radius: 7px;
+      margin: 10px;
+      outline: none;
+
+      &:focus {
+        background: $blue;
+      }
+
+      &:hover {
+        background: lighten($blue, 20%);
+      }
+    }
+  }
+
+  li.slick-active {
+    button {
+      background: $blue;
+    }
+  }
+}
+
+.news__block-title {
+  position: absolute;
+  top: 52px;
+  left: 392px;
 }
