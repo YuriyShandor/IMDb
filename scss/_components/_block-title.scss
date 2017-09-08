@@ -1,0 +1,29 @@
+.block-title {
+  display: flex;
+  flex-direction: column;
+
+  h1{
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  .block-title__line {
+    width: 48px;
+    height: 3px;
+    background: #fff;
+    margin-top: 20px;
+  }
+}
+
+.block-title_black {
+  h1{
+    color: #000;
+  }
+
+  .block-title__line {
+    background: #000;;
+  }
+}

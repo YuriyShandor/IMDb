@@ -1,4 +1,6 @@
 @import "_components/_ProximaNova.scss";
+@import "_components/_slick-dots_imdb.scss";
+@import "_components/_block-title.scss";
 @import 'nice-select';
 
 * {
@@ -544,36 +546,6 @@ header {
   }
 }
 
-.block-title {
-  display: flex;
-  flex-direction: column;
-
-  h1{
-    margin: 0;
-    font-size: 18px;
-    font-weight: 700;
-    color: #fff;
-    text-transform: uppercase;
-  }
-
-  .block-title__line {
-    width: 48px;
-    height: 3px;
-    background: #fff;
-    margin-top: 20px;
-  }
-}
-
-.block-title_black {
-  h1{
-    color: #000;
-  }
-
-  .block-title__line {
-    background: #000;;
-  }
-}
-
 .news-slider {
   width: inherit;
   outline: none;
@@ -587,6 +559,20 @@ header {
     li {
       button {
         background: darken(#e6e6e6, 15%);
+
+        &:focus {
+          background: #21afe0;
+        }
+
+        &:hover {
+          background: lighten(#21afe0, 20%);
+        }
+      }
+    }
+
+    li.slick-active {
+      button {
+        background: #21afe0;
       }
     }
   }
@@ -671,42 +657,6 @@ header {
   }
 }
 
-.slick-dots_imdb {
-  width: 90px;
-  display: flex;
-  justify-content: center;
-  position: absolute;
-
-  li {
-    list-style: none;
-
-    button {
-      font-size: 0;
-      width: 1px;
-      height: 12px;
-      border: none;
-      background: #fff;
-      border-radius: 7px;
-      margin: 10px;
-      outline: none;
-
-      &:focus {
-        background: $blue;
-      }
-
-      &:hover {
-        background: lighten($blue, 20%);
-      }
-    }
-  }
-
-  li.slick-active {
-    button {
-      background: $blue;
-    }
-  }
-}
-
 .news__block-title {
   position: absolute;
   top: 52px;
@@ -719,12 +669,19 @@ header {
   margin-bottom: 30px;
   position: relative;
 
+  .slick-dots_imdb {
+    width: 90px;
+    top: 0;
+    right: 60px;
+  }
+
   .tv-series-slide {
     width: inherit;
     height: 575px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    outline: none;
 
     .series-info {
       width: inherit;
@@ -742,10 +699,89 @@ header {
           height: inherit;
         }
       }
+
+      .series-title {
+        font-size: 24px;
+        font-weight: 700;
+        color: #fff;
+        margin: 0;
+        margin-bottom: 15px;
+      }
+
+      .movie-genre {
+        margin-bottom: 20px;
+      }
+
+      .series-story {
+        width: 525px;
+        font-size: 16px;
+        color: #fff;
+      }
     }
   }
 
   .tv-series-slide__bg_01 {
     background: url(../img/Gotham_2014_bg.jpg) no-repeat top / cover;
+  }
+
+  .tv-series-slide__bg_02 {
+    background: url(../img/Better_Call_Saul_2015_bg.jpg) no-repeat top / cover;
+  }
+
+  .tv-series-slide__bg_03 {
+    background: url(../img/Daredevil_2015_bg.jpg) no-repeat top / cover;
+  }
+
+  .tv-series-slide__bg_04 {
+    background: url(../img/Silicon_Valley_2014_bg.jpg) no-repeat top / cover;
+  }
+
+  .tv-series-slide__bg_05 {
+    background: url(../img/Ash_vs_Evil_Dead_2015_bg.jpg) no-repeat top / cover;
+  }
+}
+
+.series__block-title {
+  position: absolute;
+  top: 447px;
+  left: 17px;
+}
+
+.movie-rating {
+  display: flex;
+
+  .movie-rating__stars {
+    color: #fff;
+    position: relative;
+    margin-right: 10px;
+
+
+    .movie-rating__stars_value {
+      display: flex;
+      color: #ffd130;
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 0;
+      z-index: 1;
+      overflow: hidden;
+    }
+
+    .movie-rating__stars_full {
+      padding: 0;
+      z-index: 0;
+      display: flex;
+      color: #fff;
+    }
+  }
+
+  span {
+    font-size: 14px;
+    font-weight: 700;
+    color: #d0d0d0;
+
+    .rating__span {
+      color: #ffd130;
+    }
   }
 }

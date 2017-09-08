@@ -1,0 +1,35 @@
+.slick-dots_imdb {
+  width: 90px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+
+  li {
+    list-style: none;
+
+    button {
+      font-size: 0;
+      width: 1px;
+      height: 12px;
+      border: none;
+      background: #fff;
+      border-radius: 7px;
+      margin: 10px;
+      outline: none;
+
+      &:focus {
+        background: #21afe0;
+      }
+
+      &:hover {
+        background: lighten(#21afe0, 20%);
+      }
+    }
+  }
+
+  li.slick-active {
+    button {
+      background: #21afe0;
+    }
+  }
+}
