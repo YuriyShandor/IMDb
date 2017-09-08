@@ -1032,3 +1032,38 @@ header {
 .movie-rating span .rating__span {
   color: #ffd130;
 }
+
+.first-sidebar {
+  width: 370px;
+  display: flex;
+  flex-direction: column;
+}
+
+.first-sidebar .birthdays {
+  background: #fff;
+  width: inherit;
+  height: 510px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
+.first-sidebar .birthdays .birthdays-top {
+  display: flex;
+  margin-bottom: 53px;
+  margin-top: 23px;
+}
+
+.first-sidebar .birthdays .birthdays-top .block-title {
+  display: block;
+}
+
+.first-sidebar .birthdays .birthdays-top .more-birthdays {
+  margin-left: auto;
+  font-size: 14px;
+  color: #21afe0;
+}
+
+.first-sidebar .birthdays .birthdays-top .more-birthdays:hover {
+  text-decoration: underline;
+}

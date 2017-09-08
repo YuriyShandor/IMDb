@@ -785,3 +785,38 @@ header {
     }
   }
 }
+
+.first-sidebar {
+  width: 370px;
+  display: flex;
+  flex-direction: column;
+
+  .birthdays {
+    background: #fff;
+    width: inherit;
+    height: 510px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+
+    .birthdays-top {
+      display: flex;
+      margin-bottom: 53px;
+      margin-top: 23px;
+
+      .block-title {
+        display: block;
+      }
+
+      .more-birthdays {
+        margin-left: auto;
+        font-size: 14px;
+        color: $blue;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
