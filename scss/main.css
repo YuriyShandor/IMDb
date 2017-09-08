@@ -224,6 +224,7 @@ body {
 
 a {
   text-decoration: none;
+  outline: none;
   cursor: pointer;
 }
 
@@ -458,6 +459,18 @@ header {
   display: block;
 }
 
+.movie-genre {
+  display: flex;
+}
+
+.movie-genre div {
+  padding: 2px 5px;
+  border: 1px solid #fff;
+  font-size: 12px;
+  color: #fff;
+  margin-right: 10px;
+}
+
 .top-slider__slide-content {
   display: flex;
 }
@@ -511,13 +524,6 @@ header {
   display: flex;
   align-items: flex-end;
   margin-bottom: 25px;
-}
-
-.top-slider__slide-content .top__movie-description .top__movie-short-info .movie-genre {
-  padding: 2px 5px;
-  border: 1px solid #fff;
-  font-size: 12px;
-  margin-right: 10px;
 }
 
 .top-slider__slide-content .top__movie-description .top__movie-short-info .movie-duration {
@@ -582,7 +588,15 @@ header {
   position: relative;
 }
 
-.section_top-slider .top-slider__nav {
+.section_top-slider .imdb-slider__nav_previous {
+  left: 5%;
+}
+
+.section_top-slider .imdb-slider__nav_next {
+  right: 5%;
+}
+
+.imdb-slider__nav {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -598,17 +612,9 @@ header {
   transition: all, 0.5s;
 }
 
-.section_top-slider .top-slider__nav:hover {
+.imdb-slider__nav:hover {
   border: 2px solid #21afe0;
   color: #21afe0;
-}
-
-.section_top-slider .top-slider__nav_previous {
-  left: 5%;
-}
-
-.section_top-slider .top-slider__nav_next {
-  right: 5%;
 }
 
 .cinema-movie {
@@ -891,4 +897,41 @@ header {
   position: absolute;
   top: 52px;
   left: 392px;
+}
+
+.tv-series {
+  width: 770px;
+  height: 575px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.tv-series .tv-series-slide {
+  width: inherit;
+  height: 575px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.tv-series .tv-series-slide .series-info {
+  width: inherit;
+  margin-bottom: 45px;
+  display: flex;
+}
+
+.tv-series .tv-series-slide .series-info .series-poster {
+  width: 135px;
+  height: 190px;
+  margin-left: 35px;
+  margin-right: 30px;
+}
+
+.tv-series .tv-series-slide .series-info .series-poster img {
+  width: inherit;
+  height: inherit;
+}
+
+.tv-series .tv-series-slide__bg_01 {
+  background: url(../img/Gotham_2014_bg.jpg) no-repeat top/cover;
 }
