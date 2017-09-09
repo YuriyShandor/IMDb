@@ -797,30 +797,9 @@ header {
     height: 510px;
     display: flex;
     flex-direction: column;
-    padding: 0 20px;
-
-    .birthdays-top {
-      display: flex;
-      margin-top: 23px;
-      margin-bottom: 23px;
-
-      .block-title {
-        display: block;
-      }
-
-      .more-birthdays {
-        margin-left: auto;
-        font-size: 14px;
-        color: $blue;
-
-        &:hover {
-          text-decoration: underline;
-        }
-      }
-    }
 
     .birthdays-list {
-      padding: 0;
+      padding: 0 20px;
 
       li {
         list-style: none;
@@ -867,6 +846,37 @@ header {
           transform: translateY(-10px);
         }
       }
+    }
+  }
+
+  .trivia {
+    width: inherit;
+    height: 437px;
+    margin-top: 30px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+
+    img {
+      width: inherit;
+      height: 270px;
+    }
+
+    .trivia__title {
+      font-size: 18px;
+      color: $blue;
+      margin-top: 43px;
+      margin-left: 20px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .trivia__discr {
+      font-size: 16px;
+      margin-left: 20px;
+      padding-right: 20px;
     }
   }
 }

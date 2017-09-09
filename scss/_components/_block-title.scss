@@ -27,3 +27,26 @@
     background: #000;;
   }
 }
+
+.block-top {
+  width: inherit;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 23px;
+
+  .block-title {
+    display: block;
+    margin-left: 20px;
+  }
+
+  .see-more__block-info {
+    font-size: 14px;
+    color: #21afe0;
+    margin-right: 20px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

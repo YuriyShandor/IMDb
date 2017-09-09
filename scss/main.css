@@ -102,6 +102,29 @@
   background: #000;
 }
 
+.block-top {
+  width: inherit;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 23px;
+}
+
+.block-top .block-title {
+  display: block;
+  margin-left: 20px;
+}
+
+.block-top .see-more__block-info {
+  font-size: 14px;
+  color: #21afe0;
+  margin-right: 20px;
+}
+
+.block-top .see-more__block-info:hover {
+  text-decoration: underline;
+}
+
 .nice-select {
   -webkit-tap-highlight-color: transparent;
   background-color: #fff;
@@ -1045,31 +1068,10 @@ header {
   height: 510px;
   display: flex;
   flex-direction: column;
-  padding: 0 20px;
-}
-
-.first-sidebar .birthdays .birthdays-top {
-  display: flex;
-  margin-top: 23px;
-  margin-bottom: 23px;
-}
-
-.first-sidebar .birthdays .birthdays-top .block-title {
-  display: block;
-}
-
-.first-sidebar .birthdays .birthdays-top .more-birthdays {
-  margin-left: auto;
-  font-size: 14px;
-  color: #21afe0;
-}
-
-.first-sidebar .birthdays .birthdays-top .more-birthdays:hover {
-  text-decoration: underline;
 }
 
 .first-sidebar .birthdays .birthdays-list {
-  padding: 0;
+  padding: 0 20px;
 }
 
 .first-sidebar .birthdays .birthdays-list li {
@@ -1116,4 +1118,35 @@ header {
   color: #bdc1c5;
   margin-left: 10px;
   transform: translateY(-10px);
+}
+
+.first-sidebar .trivia {
+  width: inherit;
+  height: 437px;
+  margin-top: 30px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.first-sidebar .trivia img {
+  width: inherit;
+  height: 270px;
+}
+
+.first-sidebar .trivia .trivia__title {
+  font-size: 18px;
+  color: #21afe0;
+  margin-top: 43px;
+  margin-left: 20px;
+}
+
+.first-sidebar .trivia .trivia__title:hover {
+  text-decoration: underline;
+}
+
+.first-sidebar .trivia .trivia__discr {
+  font-size: 16px;
+  margin-left: 20px;
+  padding-right: 20px;
 }
