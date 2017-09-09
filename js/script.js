@@ -8,8 +8,8 @@ $(document).ready(function() {
     autoplay: true,
     autoplaySpeed: 5000,
     arrows: true,
-    prevArrow: $('.imdb-slider__nav_previous'),
-    nextArrow: $('.imdb-slider__nav_next'),
+    prevArrow: $('.top-slider__nav_previous'),
+    nextArrow: $('.top-slider__nav_next'),
   });
 
   $('.cinema-movie__nav_item:first-child').addClass('cinema-movie__nav_item_on-click');
@@ -29,5 +29,11 @@ $(document).ready(function() {
     dotsClass: 'slick-dots_imdb',
     autoplay: true,
     autoplaySpeed: 5000,
+  });
+
+  $('movie-photo-slider').slick({
+    arrows: true,
+    prevArrow: $('.movie-photo-slider__nav_previous'),
+    nextArrow: $('.movie-photo-slider__nav_next'),
   });
 });

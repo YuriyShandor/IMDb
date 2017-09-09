@@ -125,6 +125,27 @@
   text-decoration: underline;
 }
 
+.imdb-slider__nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border: 2px solid #fff;
+  font-size: 25px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all, 0.5s;
+}
+
+.imdb-slider__nav:hover {
+  border: 2px solid #21afe0;
+  color: #21afe0;
+}
+
 .nice-select {
   -webkit-tap-highlight-color: transparent;
   background-color: #fff;
@@ -673,33 +694,12 @@ header {
   position: relative;
 }
 
-.section_top-slider .imdb-slider__nav_previous {
+.section_top-slider .top-slider__nav_previous {
   left: 5%;
 }
 
-.section_top-slider .imdb-slider__nav_next {
+.section_top-slider .top-slider__nav_next {
   right: 5%;
-}
-
-.imdb-slider__nav {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 50px;
-  height: 50px;
-  border: 2px solid #fff;
-  font-size: 25px;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: all, 0.5s;
-}
-
-.imdb-slider__nav:hover {
-  border: 2px solid #21afe0;
-  color: #21afe0;
 }
 
 .cinema-movie {
@@ -1149,4 +1149,97 @@ header {
   font-size: 16px;
   margin-left: 20px;
   padding-right: 20px;
+}
+
+.section__movie-photo {
+  position: relative;
+}
+
+.section__movie-photo .imdb-slider__nav {
+  transform: translateY(15px);
+}
+
+.section__movie-photo .movie-photo-slider__nav_previous {
+  left: 5%;
+}
+
+.section__movie-photo .movie-photo-slider__nav_next {
+  right: 5%;
+}
+
+.movie-photo-slider_slide {
+  width: 100%;
+  height: 553px;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  position: relative;
+}
+
+.movie-photo-slider_slide .movie-photo-slider_slide-content {
+  width: inherit;
+  height: 553px;
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-photo-slider_slide .movie-photo-slider_slide-content .movie-photo__movie-info {
+  width: inherit;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+.movie-photo-slider_slide .movie-photo-slider_slide-content .movie-photo__movie-info .movie-photo__movie-title {
+  margin: 0;
+  font-size: 18px;
+  color: #fff;
+}
+
+.movie-photo-slider_slide .movie-photo-slider_slide-content .movie-photo__movie-info .see-more_movie-photo {
+  font-size: 14px;
+  color: #21afe0;
+}
+
+.movie-photo-slider_slide .movie-photo-slider_slide-content .movie-photo__movie-info .see-more_movie-photo:hover {
+  text-decoration: underline;
+}
+
+.movie-photo-slider_slide .movie-photo-slider_slide-content .movie-photo__galery {
+  width: inherit;
+  display: flex;
+  justify-content: space-between;
+}
+
+.movie-photo-slider_slide .movie-photo-slider_slide-content .movie-photo__galery .movie-photo__galery_img-big {
+  width: 370px;
+  height: 370px;
+}
+
+.movie-photo-slider_slide .movie-photo-slider_slide-content .movie-photo__galery .movie-photo__galery_images {
+  width: 370px;
+  height: 370px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.movie-photo-slider_slide .movie-photo-slider_slide-content .movie-photo__galery .movie-photo__galery_images .movie-photo__galery_img-small {
+  width: 180px;
+  height: 180px;
+}
+
+.movie-photo-slider_slide::before {
+  background-color: rgba(0, 0, 0, 0.6);
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.movie-photo-slider_slide_01 {
+  background-image: url(../img/Avengers_Age_of_Ultron_2015_movie-photo_bg.jpg);
 }

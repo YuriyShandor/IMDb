@@ -1,0 +1,20 @@
+.imdb-slider__nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border: 2px solid #fff;
+  font-size: 25px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all, 0.5s;
+
+  &:hover {
+    border: 2px solid #21afe0;
+    color: #21afe0;
+  }
+}
