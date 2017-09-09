@@ -865,7 +865,7 @@ header {
   position: relative;
 
   .imdb-slider__nav {
-    transform: translateY(15px);
+    transform: translateY(-5px);
   }
 
   .movie-photo-slider__nav_previous {
@@ -874,6 +874,16 @@ header {
 
   .movie-photo-slider__nav_next {
     right: 5%;
+  }
+
+  .slick-dotted.slick-slider {
+    margin-bottom: 0;
+  }
+
+  .slick-dots_imdb {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
@@ -895,8 +905,8 @@ header {
       width: inherit;
       display: flex;
       justify-content: space-between;
-      margin-top: 40px;
-      margin-bottom: 50px;
+      margin-top: 30px;
+      margin-bottom: 40px;
 
       .movie-photo__movie-title {
         margin: 0;
@@ -952,4 +962,20 @@ header {
 
 .movie-photo-slider_slide_01 {
   background-image: url(../img/Avengers_Age_of_Ultron_2015_movie-photo_bg.jpg);
+}
+
+.movie-photo-slider_slide_02 {
+  background-image: url(../img/Seventh_Son_2014_movie-photo_bg.jpg);
+}
+
+.movie-photo-slider_slide_03 {
+  background-image: url(../img/Chappie_2015_movie-photo_bg.jpg);
+}
+
+.movie-photo-slider_slide_04 {
+  background-image: url(../img/Jurassic_World_2015_movie-photo_bg.jpg);
+}
+
+.movie-photo-slider_slide_05 {
+  background-image: url(../img/Mad_Max_Fury_Road-2015_movie-photo_bg.jpg);
 }

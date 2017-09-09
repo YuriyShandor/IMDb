@@ -31,9 +31,16 @@ $(document).ready(function() {
     autoplaySpeed: 5000,
   });
 
-  $('movie-photo-slider').slick({
+  $('.movie-photo-slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true,
+    dotsClass: 'slick-dots_imdb',
+    autoplay: true,
+    autoplaySpeed: 5000,
     arrows: true,
     prevArrow: $('.movie-photo-slider__nav_previous'),
     nextArrow: $('.movie-photo-slider__nav_next'),
   });
+
 });
