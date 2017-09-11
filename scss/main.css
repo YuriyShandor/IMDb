@@ -1350,3 +1350,45 @@ header {
   color: #000;
   margin-top: 20px;
 }
+
+.celebs-slider__slide {
+  width: 370px;
+  height: 580px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.celebs-slider__slide .celebs__name {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.celebs-slider__slide .celebs__name:hover {
+  color: #21afe0;
+}
+
+.celebs-slider__slide .celebs__discr {
+  margin: 0;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  color: #fff;
+}
+
+.celebs-slider__slide .celebs__statistic {
+  color: #fff;
+  font-weight: 700;
+}
+
+.celebs-slider__slide .celebs__statistic span {
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.celebs-slider__slide_01 {
+  background: url(../img/Stephen_Amell_bg.jpg) no-repeat center/cover;
+}
