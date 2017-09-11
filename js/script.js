@@ -43,4 +43,13 @@ $(document).ready(function() {
     nextArrow: $('.movie-photo-slider__nav_next'),
   });
 
+  $('.recomended-movies-slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    arrows: true,
+    nextArrow: $('.recomended-movies__next'),
+  });
+
 });

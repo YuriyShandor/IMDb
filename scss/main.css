@@ -1270,23 +1270,29 @@ header {
   background-image: url(../img/Mad_Max_Fury_Road-2015_movie-photo_bg.jpg);
 }
 
-.section__recommended_selebs_newletter {
+.section__recommended_celebs_newletter {
   background: #f5f5f5;
 }
 
-.recommended_selebs_newletter {
+.recommended_celebs_newletter {
   width: inherit;
   display: flex;
   justify-content: space-between;
   padding: 30px 0;
 }
 
-.recomended-movies-slider__slide {
+.recomended-movies-slider {
   width: 370px;
   height: 580px;
+}
+
+.recomended-movies-slider__slide {
+  width: inherit;
+  height: inherit;
   display: flex;
   flex-direction: column;
   background: #fff;
+  outline: none;
 }
 
 .recomended-movies-slider__slide .recomended-movies__next {
@@ -1301,7 +1307,7 @@ header {
 }
 
 .recomended-movies-slider__slide .recommended-movie__image {
-  width: 370px;
+  width: 100%;
   height: 300px;
   margin-bottom: 20px;
 }
@@ -1314,8 +1320,15 @@ header {
   margin: 0;
   font-size: 18px;
   font-weight: 400;
-  color: #21afe0;
   margin-bottom: 15px;
+}
+
+.recomended-movies-slider__slide .recommended-movie__title a {
+  color: #21afe0;
+}
+
+.recomended-movies-slider__slide .recommended-movie__title a:hover {
+  text-decoration: underline;
 }
 
 .recomended-movies-slider__slide .recommended-movie__title span {
