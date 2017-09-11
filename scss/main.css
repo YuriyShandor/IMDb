@@ -1426,3 +1426,63 @@ header {
 .celebs-slider__slide_05 {
   background: url(../img/Johnny_Depp_bg.jpg) no-repeat center/cover;
 }
+
+.newsletters-polls {
+  width: 370px;
+  height: 580px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.imdb-newsletter {
+  width: inherit;
+  height: 223px;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  padding: 20px;
+}
+
+.imdb-newsletter p {
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.imdb-newsletter form {
+  display: flex;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.imdb-newsletter form input {
+  width: 277px;
+  height: inherit;
+  border: none;
+  background-color: #f5f5f5;
+  outline-color: #767676;
+  padding-left: 20px;
+  font-size: 16px;
+  color: #aaaaaa;
+}
+
+.imdb-newsletter form button {
+  border: none;
+  width: 50px;
+  height: inherit;
+  background: #ffd130;
+  color: #665413;
+  outline: none;
+  transition: all, 0.5s;
+}
+
+.imdb-newsletter form button:hover {
+  background: #fcc400;
+}
+
+.imdb-newsletter span {
+  font-size: 13px;
+  color: #b5b5b5;
+}

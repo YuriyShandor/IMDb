@@ -1098,3 +1098,63 @@ header {
 .celebs-slider__slide_05 {
   background: url(../img/Johnny_Depp_bg.jpg) no-repeat center / cover;
 }
+
+.newsletters-polls {
+  width: 370px;
+  height: 580px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.imdb-newsletter {
+  width: inherit;
+  height: 223px;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  padding: 20px;
+
+  p {
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+
+  form {
+    display: flex;
+    height: 50px;
+    margin-bottom: 15px;
+
+    input {
+      width: 277px;
+      height: inherit;
+      border: none;
+      background-color: #f5f5f5;
+      outline-color: darken(#f5f5f5, 50%);
+      padding-left: 20px;
+      font-size: 16px;
+      color: #aaaaaa;
+    }
+
+    button {
+      border: none;
+      width: 50px;
+      height: inherit;
+      background: #ffd130;
+      color: #665413;
+      outline: none;
+      transition: all, 0.5s;
+
+      &:hover {
+        background: darken(#ffd130, 10%);
+      }
+    }
+  }
+
+  span {
+    font-size: 13px;
+    color: #b5b5b5;
+  }
+}
