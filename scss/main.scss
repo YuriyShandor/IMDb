@@ -38,6 +38,10 @@ a {
   color: $blue;
 }
 
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+
 header {
   width: 100%;
   background: #1f1f1f;
@@ -512,13 +516,13 @@ header {
 
 .section__news-tv-sidebar {
   background: #f5f5f5;
+  padding: 30px 0;
 }
 
 .news-tv-sidebar {
   width: inherit;
   display: flex;
   justify-content: space-between;
-  padding-top: 25px;
 
   .news-tv {
     width: 770px;
@@ -647,7 +651,7 @@ header {
 .tv-series {
   width: 770px;
   height: 575px;
-  margin-bottom: 30px;
+  margin-top: 30px;
   position: relative;
 
   .slick-dots_imdb {
@@ -959,8 +963,8 @@ header {
 }
 
 .recomended-movies-slider__slide {
-  width: inherit;
-  height: inherit;
+  width: 370px;
+  height: 580px;
   display: flex;
   flex-direction: column;
   background: #fff;
@@ -1023,13 +1027,27 @@ header {
   }
 }
 
+.celebs-slider {
+  position: relative;
+  width: 370px;
+  height: 580px;
+
+  .slick-dots_imdb {
+    top: 0;
+    right: 15%;
+  }
+}
+
 .celebs-slider__slide {
   width: 370px;
   height: 580px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   padding: 20px;
+
+  .celebs__info {
+    transform: translateY(350px);
+  }
 
   .celebs__name {
     color: #fff;
@@ -1063,4 +1081,20 @@ header {
 
 .celebs-slider__slide_01 {
   background: url(../img/Stephen_Amell_bg.jpg) no-repeat center / cover;
+}
+
+.celebs-slider__slide_02 {
+  background: url(../img/Charlize_Theron_bg.jpg) no-repeat center / cover;
+}
+
+.celebs-slider__slide_03 {
+  background: url(../img/Tom_Hardy_bg.jpg) no-repeat center / cover;
+}
+
+.celebs-slider__slide_04 {
+  background: url(../img/Leonardo_DiCaprio_bg.jpg) no-repeat center / cover;
+}
+
+.celebs-slider__slide_05 {
+  background: url(../img/Johnny_Depp_bg.jpg) no-repeat center / cover;
 }
