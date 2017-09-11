@@ -1,0 +1,38 @@
+.movie-rating {
+  display: flex;
+
+  .movie-rating__stars {
+    color: #fff;
+    position: relative;
+    margin-right: 10px;
+
+
+    .movie-rating__stars_value {
+      display: flex;
+      color: #ffd130;
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 0;
+      z-index: 1;
+      overflow: hidden;
+    }
+
+    .movie-rating__stars_full {
+      padding: 0;
+      z-index: 0;
+      display: flex;
+      color: #d0d0d0;
+    }
+  }
+
+  span {
+    font-size: 14px;
+    font-weight: 700;
+    color: #d0d0d0;
+
+    .rating__span {
+      color: #ffd130;
+    }
+  }
+}

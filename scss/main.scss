@@ -2,6 +2,7 @@
 @import "_components/_slick-dots_imdb.scss";
 @import "_components/_block-title.scss";
 @import "_components/_imdb-slider__nav.scss";
+@import "_components/_movie-rating.scss";
 @import 'nice-select';
 
 * {
@@ -727,45 +728,6 @@ header {
   left: 17px;
 }
 
-.movie-rating {
-  display: flex;
-
-  .movie-rating__stars {
-    color: #fff;
-    position: relative;
-    margin-right: 10px;
-
-
-    .movie-rating__stars_value {
-      display: flex;
-      color: #ffd130;
-      position: absolute;
-      top: 0;
-      left: 0;
-      padding: 0;
-      z-index: 1;
-      overflow: hidden;
-    }
-
-    .movie-rating__stars_full {
-      padding: 0;
-      z-index: 0;
-      display: flex;
-      color: #fff;
-    }
-  }
-
-  span {
-    font-size: 14px;
-    font-weight: 700;
-    color: #d0d0d0;
-
-    .rating__span {
-      color: #ffd130;
-    }
-  }
-}
-
 .first-sidebar {
   width: 370px;
   display: flex;
@@ -978,4 +940,72 @@ header {
 
 .movie-photo-slider_slide_05 {
   background-image: url(../img/Mad_Max_Fury_Road-2015_movie-photo_bg.jpg);
+}
+
+.section__recommended_selebs_newletter {
+  background: #f5f5f5;
+}
+
+.recommended_selebs_newletter {
+  width: inherit;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+.recomended-movies-slider__slide {
+  width: 370px;
+  height: 580px;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+
+  .recomended-movies__next {
+    margin-right: 20px;
+    font-size: 14px;
+    color: $blue;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .recommended-movie__image {
+    width: 370px;
+    height: 300px;
+    margin-bottom: 20px;
+  }
+
+  .recomended-movies-slider__slide_padding {
+    padding: 0 20px;
+  }
+
+  .recommended-movie__title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 400;
+    color: $blue;
+    margin-bottom: 15px;
+
+    span {
+      color: #222;
+    }
+  }
+
+  .movie-genre {
+    margin-bottom: 15px;
+
+    div {
+      border: 1px solid #c6c6c6;
+      color: #c6c6c6;
+    }
+  }
+
+  .recommended-movie__discr {
+    margin: 0;
+    font-size: 16px;
+    color: #000;
+    margin-top: 20px;
+  }
 }
