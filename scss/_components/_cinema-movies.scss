@@ -1,0 +1,36 @@
+.cinema-movie__links_movie-list {
+  width: inherit;
+  display: flex;
+  justify-content: space-between;
+
+  .cinema-movie__links_movie-list-item {
+    display: flex;
+    flex-direction: column;
+
+    a {
+      outline: none;
+      width: 170px;
+      height: 230px;
+      overflow: hidden;
+
+      img {
+        width: inherit;
+        height: inherit;
+        transition: all 0.3s linear;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    h1 {
+      font-size: 16px;
+      font-weight: 400;
+      color: #21afe0;
+      width: 160px;
+      margin: 0;
+      margin-top: 20px;
+    }
+  }
+}

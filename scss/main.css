@@ -184,6 +184,43 @@
   color: #ffd130;
 }
 
+.cinema-movie__links_movie-list {
+  width: inherit;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cinema-movie__links_movie-list .cinema-movie__links_movie-list-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.cinema-movie__links_movie-list .cinema-movie__links_movie-list-item a {
+  outline: none;
+  width: 170px;
+  height: 230px;
+  overflow: hidden;
+}
+
+.cinema-movie__links_movie-list .cinema-movie__links_movie-list-item a img {
+  width: inherit;
+  height: inherit;
+  transition: all 0.3s linear;
+}
+
+.cinema-movie__links_movie-list .cinema-movie__links_movie-list-item a img:hover {
+  transform: scale(1.1);
+}
+
+.cinema-movie__links_movie-list .cinema-movie__links_movie-list-item h1 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #21afe0;
+  width: 160px;
+  margin: 0;
+  margin-top: 20px;
+}
+
 .nice-select {
   -webkit-tap-highlight-color: transparent;
   background-color: #fff;
@@ -794,43 +831,6 @@ header {
   flex-direction: column;
 }
 
-.cinema-movie__links_movies .cinema-movie__links_movie-list {
-  width: inherit;
-  display: flex;
-  justify-content: space-between;
-}
-
-.cinema-movie__links_movies .cinema-movie__links_movie-list .cinema-movie__links_movie-list-item {
-  display: flex;
-  flex-direction: column;
-}
-
-.cinema-movie__links_movies .cinema-movie__links_movie-list .cinema-movie__links_movie-list-item a {
-  outline: none;
-  width: 170px;
-  height: 230px;
-  overflow: hidden;
-}
-
-.cinema-movie__links_movies .cinema-movie__links_movie-list .cinema-movie__links_movie-list-item a img {
-  width: inherit;
-  height: inherit;
-  transition: all 0.3s linear;
-}
-
-.cinema-movie__links_movies .cinema-movie__links_movie-list .cinema-movie__links_movie-list-item a img:hover {
-  transform: scale(1.1);
-}
-
-.cinema-movie__links_movies .cinema-movie__links_movie-list .cinema-movie__links_movie-list-item h1 {
-  font-size: 16px;
-  font-weight: 400;
-  color: #21afe0;
-  width: 160px;
-  margin: 0;
-  margin-top: 20px;
-}
-
 .cinema-movie__links_movies .cinema-movie__links_movies-more {
   margin-top: 35px;
   margin-bottom: 40px;
@@ -1276,13 +1276,13 @@ header {
 
 .section__recommended_celebs_newletter {
   background: #f5f5f5;
+  padding: 30px 0;
 }
 
 .recommended_celebs_newletter {
   width: inherit;
   display: flex;
   justify-content: space-between;
-  padding: 30px 0;
 }
 
 .recomended-movies-slider {
@@ -1472,6 +1472,7 @@ header {
   background: #ffd130;
   color: #665413;
   outline: none;
+  cursor: pointer;
   transition: all, 0.5s;
 }
 
@@ -1533,4 +1534,41 @@ header {
   font-size: 14px;
   color: #1f1f1f;
   margin-top: 5px;
+}
+
+.section__recent-seen {
+  width: 100%;
+  background: #f5f5f5;
+  padding-bottom: 50px;
+}
+
+.recent-seen__movies {
+  width: inherit;
+  background: #fff;
+  padding: 20px;
+}
+
+.recent-seen__movies .block-top {
+  width: 1130px;
+}
+
+.recent-seen__movies .block-top .block-title {
+  margin-left: 0;
+}
+
+.recent-seen__movies .block-top .see-more__block-info {
+  margin-right: 0;
+}
+
+.recent-seen__movies .cinema-movie__links_movie-list {
+  width: 1130px;
+}
+
+.recent-seen__movies .cinema-movie__links_movie-list .cinema-movie__links_movie-list-item a {
+  width: 160px;
+  height: 220px;
+}
+
+.recent-seen__movies .cinema-movie__links_movie-list .cinema-movie__links_movie-list-item h1 {
+  width: 150px;
 }
