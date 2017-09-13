@@ -608,7 +608,7 @@ header {
 
 .news__block-title {
   position: absolute;
-  top: 52px;
+  top: 32px;
   left: 392px;
 }
 
@@ -824,6 +824,7 @@ header {
   background-position: top;
   background-size: cover;
   position: relative;
+  outline: none;
 
   .movie-photo-slider_slide-content {
     width: inherit;
@@ -998,7 +999,7 @@ header {
 
   .slick-dots_imdb {
     top: 0;
-    right: 15%;
+    right: 20px;
   }
 }
 
@@ -1009,6 +1010,7 @@ header {
   flex-direction: column !important;
   justify-content: space-between !important;
   padding: 20px;
+  outline: none;
 
   .celebs__name {
     color: #fff;
